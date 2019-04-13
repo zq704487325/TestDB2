@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectMongodb", "TestProjectMongodb\TestProjectMongodb.csproj", "{602FEEF9-EB78-4276-A2EA-9FE9CACC6708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalMongoDB", "DalMongoDB\DalMongoDB.csproj", "{214C8A9A-3CE6-4BE7-8C07-E7463AF7D256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{00976208-1AFA-4FA8-9257-ECB3A84C7029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{602FEEF9-EB78-4276-A2EA-9FE9CACC6708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602FEEF9-EB78-4276-A2EA-9FE9CACC6708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602FEEF9-EB78-4276-A2EA-9FE9CACC6708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602FEEF9-EB78-4276-A2EA-9FE9CACC6708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214C8A9A-3CE6-4BE7-8C07-E7463AF7D256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214C8A9A-3CE6-4BE7-8C07-E7463AF7D256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214C8A9A-3CE6-4BE7-8C07-E7463AF7D256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214C8A9A-3CE6-4BE7-8C07-E7463AF7D256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00976208-1AFA-4FA8-9257-ECB3A84C7029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00976208-1AFA-4FA8-9257-ECB3A84C7029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00976208-1AFA-4FA8-9257-ECB3A84C7029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00976208-1AFA-4FA8-9257-ECB3A84C7029}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ADE368C-3740-4344-8B11-5240A82A767C}
+	EndGlobalSection
+EndGlobal

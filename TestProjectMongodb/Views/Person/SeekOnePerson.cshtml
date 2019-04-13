@@ -1,0 +1,72 @@
+﻿@using Model
+@model Person
+@{
+    ViewBag.Title = "SeekOnePerson";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<h2>SeekOnePerson</h2>
+<script src="~/Scripts/Person/SeekOnePerson.js"></script>
+<form method="post">
+    <input type="hidden" id="id" name="_id" value="@Model._id" />
+    <div>
+        <div>
+            <div>
+                姓名
+            </div>
+            <div>
+                <input type="text" value="@Model.Name" name="Name"/>
+            </div>
+        </div>
+        <div>
+            <div>
+                薪资
+            </div>
+            <div>
+                <input type="text" value="@Model.Salary" name="Salary" />
+            </div>
+        </div>
+        <div>
+            <div>
+                地址
+            </div>
+            <div>
+                <input type="text" id="AddressTxt" /> <input type="button" value="增加" onclick="AddAdres()" />
+                <div id="AddressDiv">
+                    @foreach (var item in Model.Address)
+                    {
+                    <div><input type="text" readonly="readonly" value="@item" name="Address" /><input type="button" value="删除" onclick="DelAdres(this)" /></div>
+                       
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <input type="submit" />
+        </div>
+    </div>
+</form>
+
+<script  type="text/javascript">
+
+    //$(function () { 
+
+    function AddAdres() {
+        var adres = $("#AddressTxt").val();
+        if (adres == "") {
+            alert("请输入地址");
+            return;
+        }
+        $("#AddressDiv").append( '<div><input type="text" readonly="readonly" value="'+adres+'" name="Address" /><input type="button" value="删除" onclick="DelAdres(this)" /></div>');
+
+    }
+    function DelAdres(el) {
+        $(el).parent().remove();
+    }
+
+
+
+    //})
+</script>
+
+

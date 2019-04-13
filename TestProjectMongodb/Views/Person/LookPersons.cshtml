@@ -1,0 +1,32 @@
+﻿@using Model
+@model IEnumerable<Person>
+@{
+    ViewBag.Title = "LookPersons";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>LookPersons</h2>
+@*<script src="~/Scripts/EasyUI/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/EasyUI/easyui-lang-zh_CN.js"></script>*@
+<a href="../Person/SeekOnePerson">增加人员 </a>
+<script src="~/Scripts/Person/LookPerson.js"></script>
+<table style="width:1000px;border:1px;border-color:red;" cellspacing="0">
+    <thead><tr><th>名字</th><th>所属公司</th><th>地址</th><th>删除</th></tr></thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><a href="../Person/SeekOnePerson?_id=@item._id">@item.Name</a></td>
+                <td>@item.Salary</td>
+                <td>
+                    @foreach (var ite in item.Address)
+                    {
+                        <label>@ite</label>
+                    }
+                </td>
+                <td><a href="#" onclick='DelPersonAjax("@item._id")'>删除</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
