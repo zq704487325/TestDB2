@@ -88,7 +88,7 @@ namespace DalMongoDB
             return true;
         }
 
-
+        #endregion 
         #region 使用BsonDocument
         /// <summary>
         /// 插入数据
