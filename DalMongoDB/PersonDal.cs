@@ -23,6 +23,7 @@ namespace DalMongoDB
             collection = Database.GetCollection<Person>("person");
             collectionBD = Database.GetCollection<BsonDocument>("person"); 
         }
+        #region person表的增删改查
         /// <summary>
         /// 全查
         /// </summary>
@@ -121,7 +122,7 @@ namespace DalMongoDB
 
         }
         /// <summary>
-        /// 
+        /// 修改数据
         /// </summary>
         public void UpdateDB()
         {
@@ -131,6 +132,16 @@ namespace DalMongoDB
             UpdateDefinition<BsonDocument> updDef = updDefBui.Set("Name", "zq2");
             collectionBD.UpdateMany(filDef, updDef);
         }
+
+        /// <summary>
+        /// 全部删除
+        /// </summary>
+        public void DeleteDB()
+        {
+            collectionBD.DeleteMany(Builders<BsonDocument>.Filter.Empty);
+        }
+
+
 
 
         #endregion
