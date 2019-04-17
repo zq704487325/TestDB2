@@ -14,6 +14,6 @@ namespace Model
         public ObjectId _id { get; set; }
         public string Name { get; set; }
         public double Salary { get; set; }
-        public List<string> Address = new List<string>();
+        public List<string> Address { get; set; }
     }
 }

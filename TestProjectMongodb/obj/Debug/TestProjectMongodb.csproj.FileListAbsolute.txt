@@ -239,16 +239,11 @@ E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Diagnostics.StackTrac
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.IO.Compression.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.IO.FileSystem.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.IO.Pipes.AccessControl.dll
-E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.IO.Pipes.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Reflection.Metadata.dll
-E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Security.AccessControl.dll
-E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Security.Claims.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Security.Cryptography.Encoding.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Security.Cryptography.Primitives.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Security.Principal.Windows.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Text.Encoding.CodePages.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.ValueTuple.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Xml.ReaderWriter.dll
@@ -356,7 +351,6 @@ E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Xml.XmlDocument.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Xml.XmlSerializer.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Xml.XPath.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Xml.XPath.XDocument.dll
-E:\githubBase\TestDB2\TestProjectMongodb\bin\Antlr3.Runtime.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\DalMongoDB.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\DnsClient.dll
 E:\githubBase\TestDB2\TestProjectMongodb\bin\Microsoft.AI.Agent.Intercept.dll
@@ -402,7 +396,6 @@ E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Web.WebPages.xml
 E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Web.WebPages.Deployment.xml
 E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Web.WebPages.Razor.xml
 E:\githubBase\TestDB2\TestProjectMongodb\bin\Newtonsoft.Json.xml
-E:\githubBase\TestDB2\TestProjectMongodb\bin\Antlr3.Runtime.pdb
 E:\githubBase\TestDB2\TestProjectMongodb\bin\System.Diagnostics.DiagnosticSource.xml
 E:\githubBase\TestDB2\TestProjectMongodb\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 E:\githubBase\TestDB2\TestProjectMongodb\bin\Microsoft.AI.DependencyCollector.xml
@@ -418,3 +411,11 @@ E:\githubBase\TestDB2\TestProjectMongodb\bin\zh-Hans\System.Web.WebPages.Razor.r
 E:\githubBase\TestDB2\TestProjectMongodb\obj\Debug\TestProjectMongodb.csprojAssemblyReference.cache
 E:\githubBase\TestDB2\TestProjectMongodb\obj\Debug\TestProjectMongodb.csproj.CoreCompileInputs.cache
 E:\githubBase\TestDB2\TestProjectMongodb\obj\Debug\TestProjectMongodb.csproj.CopyComplete
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Globalization.Calendars.dll
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Net.Http.dll
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Net.Sockets.dll
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\githubBase\TestDB2\TestProjectMongodb\bin\roslyn\System.Threading.Tasks.Extensions.dll

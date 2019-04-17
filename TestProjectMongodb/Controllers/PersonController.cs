@@ -28,16 +28,22 @@ namespace TestProjectMongodb.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult SeekOnePerson(string _id)
+        public ActionResult SeekOnePerson(string id)
         {
             //string _id = Request.QueryString["id"].ToString();
-            if (string.IsNullOrEmpty(_id))
+            if (string.IsNullOrEmpty(id))
             {
-                return View(new Person() { _id = default(ObjectId), Name = "", Salary = default(double), Address = new List<string>() });
+                return View(new Person()
+                {
+                    _id = default(ObjectId),
+                    Name = "",//1
+                    Salary = default(double),
+                    Address =new List<string>()
+                });
             }
-            ObjectId __id = new ObjectId();
-            ObjectId.TryParse(_id, out __id);
-            Person person = pDal.SelectSinglePerson(__id);
+            ObjectId _id;
+            ObjectId.TryParse(id, out _id);
+            Person person = pDal.SelectSinglePerson(_id);
             return View(person);
 
             //return View();
@@ -49,11 +55,11 @@ namespace TestProjectMongodb.Controllers
         /// <param name="person"></param>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult SeekOnePerson(string _id, Person person,string[] Address)
+        public ActionResult SeekOnePerson(string id, Person person,string[] Address)
         {
-            ObjectId __id;
-            ObjectId.TryParse(_id,out __id);
-            person._id = __id;
+            ObjectId _id;
+            ObjectId.TryParse(id,out _id);
+            person._id = _id;
             if (Address != null)
             {
                 List<string> adresList = Address.ToList();
@@ -78,11 +84,11 @@ namespace TestProjectMongodb.Controllers
         /// <param name="_id"></param>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult DeletePerson(string _id)
+        public ActionResult DeletePerson(string id)
         {
-            ObjectId __id;
-            ObjectId.TryParse(_id, out __id);
-            bool result= pDal.DeletePerson(__id);
+            ObjectId _id;
+            ObjectId.TryParse(id, out _id);
+            bool result= pDal.DeletePerson(_id);
             return Json(new { Result = result },JsonRequestBehavior.AllowGet);
             
         }
