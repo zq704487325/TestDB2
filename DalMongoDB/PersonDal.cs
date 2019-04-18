@@ -70,7 +70,8 @@ namespace DalMongoDB
         public bool UpdatePerson(Person person)
         {
             var filer = Builders<Person>.Filter.Eq("_id", person._id);
-            var update = Builders<Person>.Update.Set("Name",person.Name).Set("Salary",person.Salary).Set("Address",person.Address);
+            var update = Builders<Person>.Update.Set("Name",person.Name)
+                .Set("Salary",person.Salary).Set("Address",person.Address);
             var result=  collection.UpdateOne(filer, update);
             return true;
 
